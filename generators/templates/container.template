@@ -22,3 +22,5 @@ class {{ COMPONENT_NAME_HOLDER }} extends React.Component {
 {{ COMPONENT_NAME_HOLDER }}.defaultProps = {
   message: 'This is container {{ COMPONENT_NAME_HOLDER }}'
 }
+
+export default {{ COMPONENT_NAME_HOLDER }}

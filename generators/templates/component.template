@@ -14,3 +14,5 @@ const {{ COMPONENT_NAME_HOLDER }} = props => (
 {{ COMPONENT_NAME_HOLDER }}.defaultProps = {
   message: 'This is omponent {{ COMPONENT_NAME_HOLDER }}'
 }
+
+export default {{ COMPONENT_NAME_HOLDER }}
