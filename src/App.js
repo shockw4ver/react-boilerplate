@@ -1,26 +1,32 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from 'mobx-react'
+
+// 为了在不同的浏览器环境中有尽量统一的展示，使用 normalize.css 进行样式重置
+import 'normalize.css'
+// 重置标签样式，懂的都懂
+import 'reset.css'
+
+// store
+import * as store from '@store'
+
+// router
+import Routes from './Router'
+
+import Navbar from '@layouts/Navbar'
+
+import request from '@services/request'
+
+request('/api/ok')
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Provider {...store}>
+        <div>
+          <Navbar />
+          <Routes />
+        </div>
+      </Provider>
     );
   }
 }

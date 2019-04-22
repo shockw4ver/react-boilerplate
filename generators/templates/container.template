@@ -1,0 +1,24 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+import { inject, observer } from 'mobx-react'
+
+import './index.scss'
+
+@inject('user')
+@observer
+class {{ COMPONENT_NAME_HOLDER }} extends React.Component {
+
+  render () {
+    return (
+      <div className="{{ NAME_HOLDER }}">{ this.props.message }</div>
+    )
+  }
+}
+
+{{ COMPONENT_NAME_HOLDER }}.propTypes = {
+  message: PropTypes.string
+}
+
+{{ COMPONENT_NAME_HOLDER }}.defaultProps = {
+  message: 'This is container {{ COMPONENT_NAME_HOLDER }}'
+}

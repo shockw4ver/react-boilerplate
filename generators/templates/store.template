@@ -1,0 +1,11 @@
+import { observable } from 'mobx'
+
+class {{ CLASS_NAME_HOLDER }} {
+  @observable __name__ = '{{ NAME_HOLDER }}'
+
+  toString () {
+    return this.__name__
+  }
+}
+
+export default {{ EXPORT_NAME_HOLDER }}

@@ -1,0 +1,16 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+
+import './index.scss'
+
+const {{ COMPONENT_NAME_HOLDER }} = props => (
+  <div className="{{ NAME_HOLDER }}">{ props.message }</div>
+)
+
+{{ COMPONENT_NAME_HOLDER }}.propTypes = {
+  message: PropTypes.string
+}
+
+{{ COMPONENT_NAME_HOLDER }}.defaultProps = {
+  message: 'This is omponent {{ COMPONENT_NAME_HOLDER }}'
+}

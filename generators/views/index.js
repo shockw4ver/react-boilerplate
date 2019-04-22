@@ -1,0 +1,6 @@
+exports.store = require('./store')
+exports.functionalComponent = require('./functionalComponent')
+exports.style = require('./style')
+exports.classComponent = require('./classComponent')
+exports.pageComponent = require('./pageComponent')
+exports.layoutComponent = require('./layoutComponent')
